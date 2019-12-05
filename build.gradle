@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "io.projectreactor:reactor-core:3.3.1.RELEASE"
+
+    testCompile "io.projectreactor:reactor-test:3.3.1.RELEASE"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
